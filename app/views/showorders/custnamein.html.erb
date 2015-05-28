@@ -1,0 +1,17 @@
+<h1> Please input the name of the customer for whom you want to orders </h1>
+<br><br><br>
+<%= form_tag(showorders_ordersout_path, :controller => "showorders", :action => "ordersout", :method => "post") do %> <!-- Ruby on Rails way of creating a form --> 
+
+<div class="field">
+
+	<% label_tag :Customer_lastname %><br>
+
+	<%= text_field_tag :customer_lastnme_in %>
+
+</div>
+
+	<div class="actions">
+		<%= submit_tag "Submit Customer Name" %>
+	</div>
+
+<% end %> 

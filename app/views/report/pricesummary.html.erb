@@ -1,0 +1,22 @@
+<center><h1>Report Summary</h1>
+<br>
+<h2><font = +1> The total number of toys is <%= @toy_count %> </font></h2></center>
+<br>
+<center><h2> The List of Toys </h2></center>
+<br>
+<center>
+
+<table id="table" border = 3>
+
+<th>Toy Name </th><th> Toy Price</th> </tr>
+  
+    <% @toy_list.each do |m| %>
+      <tr> <td> <%= m.name %> </td> <td> <%= number_with_precision(m.price, :precision => 2)%> </td></tr>
+    <% end %>
+</table></center>
+
+<h3 align="right"> Manager's Toy Listing </h3> <a href="http://localhost:3000/toys"> Click Here </a>
+
+<h3 align="right"> Home </h3> <a href="http://localhost:3000"> Click Here </h3>
+
+<!-- .erd stands for embedded ruby --> 

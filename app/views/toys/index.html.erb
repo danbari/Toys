@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Toys</h1>
+<div id="updatemusic">
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Supplier</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @toys.each do |toy| %>
+      <tr>
+        <td><%= toy.name %></td>
+        <td><%= toy.price %></td>
+        <td><%= toy.supplier %></td>
+        <td><%= link_to 'Show', toy %></td>
+        <td><%= link_to 'Edit', edit_toy_path(toy) %></td>
+        <td><%= link_to 'Destroy', toy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table> </div>
+<br>
+<%= link_to 'Add new toy', new_toy_path %>
+<br>
+<br>
+<h3 align="right"> Home </h3> <a href="http://localhost:3000"> Click Here </a>
+
+<h3 align="right"> Toy List </h3> <a href="http://localhost:3000/report/pricesummary"> Click Here </h3>
+
+

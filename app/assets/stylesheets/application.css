@@ -1,0 +1,129 @@
+body {
+	/*background-color: #3399FF;*/
+	background-color: #CC3300; 
+	font-family: verdana, arial, helvetica, sans-serif; 
+	font-size: 13px;
+	line-height: 18px;
+	background-image:url('background1.jpg');
+	background-repeat: no-repeat center center fixed-webkit-background-size:cover;
+	-moz-background-size: cover;
+	-0-background-size: cover; 
+	background-size:cover;
+}
+
+h1 {
+	font-size: 35px;
+	text-align: center;
+	font-family: helvetica, "Times New Roman", "Comic Sans MS", Serif; 
+	font-weight: normal;
+	background-color: #FF9966;
+	 /* this should be 14*/
+	/*border-style: double; */
+	border-bottom-style:solid;
+	border-top-style:solid;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-color: black; 
+	width: 100%;
+	margin: auto;
+	padding: 10px;		
+}
+
+h2 {
+	font-size: 16px;
+	text-align:center;
+	border-style: solid;
+	background-top-width: 1px;
+	background-bottom-width: 1px;
+	border-color: black;
+	margin: auto;
+	background-color: #FF9966;
+	width: 70%;
+
+
+}
+
+a {
+	font-size: 12px;
+}
+
+a:link{
+	color: magenta;
+}
+
+a:visited{
+	color: magenta;
+}
+
+a:hover {
+	color: white;
+}
+
+h3 {
+	font-size: 12px;
+	text-align: left;
+	color: white;
+
+
+
+}
+
+#numberoftoys {
+	text-align: center;
+
+}
+p {
+	text-align: center; 
+}
+
+#topbanner1{
+	height: 100px;
+	width: 100%;
+	background-color: #E4D2BA; 
+	background-image: url('pikachu.jpeg'); /* could be double quoutes */
+		background-repeat: repeat;
+		background-position: center;
+
+}
+#topbannertitle {
+	height: 160px;
+	width: 100%;
+	background-color: #FFFFFCC;
+	background-image: url('Space_Needle002.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-bottom-padding: 10px;
+		background-top-padding: 10px;
+		background-size: 200px 150px;
+	
+	}
+#homepics {
+
+	text-align: center;
+	table-layout: center;
+}
+#table {
+
+	border-color: black;
+	border-style: solid;
+	background-color: #45E6C5;
+}
+
+#updatemusic {
+	font-size: 14px;
+	background-color:#FFBD7D;
+	text-align: center;
+	width: 100%;
+}
+
+img {
+	height:250px;
+	width: 300px; 
+}
+
+
+
+
+
