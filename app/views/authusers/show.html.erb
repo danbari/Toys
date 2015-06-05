@@ -10,5 +10,27 @@
   <%= @authuser.password %>
 </p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Userid</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+
+<tbody>
+    <% @authusers.each do |authuser| %>
+      <tr>
+        <td><%= authuser.userid %></td>
+        <td><%= authuser.password %></td>
+        <td><%= link_to 'Show', authuser %></td>
+        <td><%= link_to 'Edit', edit_authuser_path(authuser) %></td>
+        <td><%= link_to 'Destroy', authuser, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 <%= link_to 'Edit', edit_authuser_path(@authuser) %> |
 <%= link_to 'Back', authusers_path %>
